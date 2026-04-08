@@ -1,20 +1,48 @@
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(90deg, #fbc2eb, #a6c1ee,#c5a6ee); /* degradado pastel */
+
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #6d6c6d, #365c9c,#9257df); /* degradado pastel */
     padding: 20px;
+    background-attachment: fixed;
+    margin: 0%;
+    
+    
+}
+/* Capa de estrellas */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px),
+    radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px);
+  background-size: 60px 60px, 100px 100px, 150px 150px; /* distintas densidades */
+  animation: sparkle 10s infinite linear;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Animación de parpadeo suave */
+@keyframes sparkle {
+  0% { transform: translate(0, 0); opacity: 0.4; }
+  50% { transform: translate(-20px, -20px); opacity: 0.7; }
+  100% { transform: translate(0, 0); opacity: 0.4; }
 }
 
 table {
     
     width: 70%;
-    margin: 50px auto;
+    margin: 120px auto;
     border-collapse: collapse;
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
 }
 
 thead {
-    background: linear-gradient(90deg, #fbc2eb); /* degradado pastel */
+    background: linear-gradient(90deg, #473be6); /* degradado pastel */
     color: rgb(34, 33, 33);
 }
 
@@ -28,30 +56,34 @@ th, td {
 }
 
 th {
+    color: #ccc;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 0.9em;
     text-align: center;
-}
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
     
 }
 
+
 td{
     text-align: center;
-    background: linear-gradient(90deg, #fbc2eb); /* degradado pastel */
+    background: linear-gradient(90deg, #f0eff3); /* degradado pastel */
 }
 
 a {
-    color: #e6000c;
+    color: white;
     text-decoration: none;
     font-weight: bold;
+    background: linear-gradient(135deg, #6d6c6d, #365c9c,#9257df);
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 8px 14px;
 }
 
 a:hover {
-    text-decoration: underline;
+  transform: scale(1.50); 
 }
 
 
@@ -68,6 +100,40 @@ a:hover {
     to { left: -100%; }
 }
 
+/* Encabezado y saludo */
 .bienvenida{
     text-align: center;
+    color: #4b0082;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+/* Boton de nombre */
+.input-area {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 1em;
+}
+
+button {
+  background: linear-gradient(135deg, #a86bd8, #ff9ebd);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff9ebd, #a86bd8);
+  transform: scale(1.05);
 }
