@@ -46,7 +46,7 @@ thead {
     color: rgb(34, 33, 33);
 }
 
-
+/* estilos tabla*/
 th, td {
     border: 1px solid #0a0a0a;
     padding: 8px 12px; /* menos espacio interno */
@@ -86,13 +86,13 @@ i:hover {
   transform: scale(1.50); 
 }
 
-
+/* Texto movil */
 .texto-movible {
     position: absolute;
     white-space: nowrap;
     animation: mover 50s linear infinite;
     font-size: 20px;
-    color: #0e0d0d;
+    color: #f8f8f8;
 }
 
 @keyframes mover {
@@ -103,7 +103,7 @@ i:hover {
 /* Encabezado y saludo */
 .bienvenida{
     text-align: center;
-    color: #4b0082;
+    color: #fcfcfc;
     font-size: 2.2em;
     margin-bottom: 10px;
 }
@@ -123,7 +123,7 @@ input[type="text"] {
 }
 
 button {
-  background: linear-gradient(135deg, #a86bd8, #ff9ebd);
+  background: linear-gradient(135deg, #6d6c6d, #9c3669,#df576e);
   color: white;
   border: none;
   padding: 8px 16px;
@@ -134,6 +134,6 @@ button {
 }
 
 button:hover {
-  background: linear-gradient(135deg, #ff9ebd, #a86bd8);
+  background: linear-gradient(135deg, #6d6c6d, #9c3669,#df576e);
   transform: scale(1.05);
 }
