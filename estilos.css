@@ -70,11 +70,11 @@ td{
     background: linear-gradient(90deg, #f0eff3); /* degradado pastel */
 }
 
-a {
+i {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    background: linear-gradient(135deg, #6d6c6d, #365c9c,#9257df);
+    background: linear-gradient(135deg, #6d6c6d, #9c3669,#df576e);
     display: inline-block;
     transition: all 0.3s ease;
     font-weight: 500;
@@ -82,7 +82,7 @@ a {
     padding: 8px 14px;
 }
 
-a:hover {
+i:hover {
   transform: scale(1.50); 
 }
 
